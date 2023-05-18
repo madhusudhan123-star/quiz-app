@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import { Container, Menu } from 'semantic-ui-react';
 
 import Stats from './Stats';
-import QNA from './QNA';
+
 
 const Result = ({
   totalQuestions,
   correctAnswers,
   timeTaken,
-  questionsAndAnswers,
   replayQuiz,
   resetQuiz
 }) => {
@@ -27,11 +26,6 @@ const Result = ({
           active={activeTab === 'Stats'}
           onClick={handleTabClick}
         />
-        <Menu.Item
-          name="QNA"
-          active={activeTab === 'QNA'}
-          onClick={handleTabClick}
-        />
       </Menu>
       {activeTab === 'Stats' && (
         <Stats
@@ -42,7 +36,6 @@ const Result = ({
           resetQuiz={resetQuiz}
         />
       )}
-      {activeTab === 'QNA' && <QNA questionsAndAnswers={questionsAndAnswers} />}
       <br />
     </Container>
   );
