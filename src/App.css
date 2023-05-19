@@ -1,0 +1,88 @@
+body{
+  background-color: black;
+}
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 4rem;
+  color: #ffffff9e;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: white;
+}
+
+.options {
+  margin-bottom: 30px;
+}
+
+.options button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.options button:hover {
+  background-color: #ddd;
+}
+
+.options button.selected {
+  background-color: rgb(85 85 255);
+  color: #fff;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 2.0;
+}
+
+button.next-btn {
+  padding: 10px 30px;
+  font-size: 18px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.button{
+  border: none;
+  padding: 8px 42px;
+  font-size: 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 89px;
+}
+
+button.next-btn:hover {
+  background-color: #555;
+}
+
+.timer {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: white;
+}
+
+.result {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
