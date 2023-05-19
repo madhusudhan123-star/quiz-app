@@ -34,7 +34,7 @@ function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedOption, setSelectedOption] = useState('');
-  const [timeRemaining, setTimeRemaining] = useState(1000);
+  const [timeRemaining, setTimeRemaining] = useState(60);
   const [quizCompleted, setQuizCompleted] = useState(false);
 
   useEffect(() => {
